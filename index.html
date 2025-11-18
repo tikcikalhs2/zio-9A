@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ferrari Dealership</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      /* Gradasi merah dan hitam untuk latar utama */
+      background: linear-gradient(135deg, #000000, #8b0000, #ff0000);
+      background-attachment: fixed;
+      color: #000;
+    }
+
+    /* Header Image */
+    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 3px solid #ff0000;
+    }
+
+    /* Navigation Menu */
+    nav {
+      background-color: #000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      padding: 15px 30px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    nav li:hover {
+      background-color: #555; /* abu-abu saat hover */
+    }
+
+    /* Marquee replacement */
+    .marquee {
+      background-color: yellow;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee p {
+      display: inline-block;
+      animation: scroll 10s linear infinite;
+      font-weight: bold;
+      color: #000;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Car Grid */
+    .car-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 1400px;
+    }
+
+    .car-card {
+      width: 300px;
+      margin: 15px;
+      text-align: center;
+      padding-bottom: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .car-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,0,0,0.8);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #fff;
+    }
+
+    .car-name {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #fff;
+      text-shadow: 0 0 3px #000;
+    }
+
+    .car-price {
+      font-size: 16px;
+      color: #000;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <img class="banner" src="img/novitec-ferrari-sf90-stradale-2022.jpg" alt="Ferrari Banner">
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping guide.html">Shopping Guide</a></li>
+      <li><a href="Catalog.html">Catalog</a></li>
+      <li><a href="profil.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Marquee / Best Seller -->
+  <div class="marquee">
+    <p>🔥 Best Seller 🔥</p>
+  </div>
+
+  <!-- Car Cards -->
+  <div class="car-container">
+    <div class="car-card" style="background-color: #FF0000;">
+      <img src="img/images (1).jpg" alt="Ferrari SF90 Stradale">
+      <div class="car-name">Ferrari SF90 Stradale</div>
+      <div class="car-price">Rp.17.000.000.000</div>
+    </div>
+
+    <div class="car-card" style="background-color: #FFCC33;">
+      <img src="img/images.jpg" alt="Ferrari F8 Spider">
+      <div class="car-name">Ferrari F8 Spider</div>
+      <div class="car-price">Rp.14.000.000.000</div>
+    </div>
+
+    <div class="car-card" style="background-color: #669966;">
+      <img src="img/images (2).jpg" alt="Ferrari Purosangue">
+      <div class="car-name">Ferrari Purosangue</div>
+      <div class="car-price">Rp.18.500.000.000</div>
+    </div>
+
+    <div class="car-card" style="background-color: #999999;">
+      <img src="img/images (3).jpg" alt="Ferrari 12Cilindri">
+      <div class="car-name">Ferrari 12Cilindri</div>
+      <div class="car-price">Rp.15.000.000.000</div>
+    </div>
+  </div>
+
+</body>
+</html>
